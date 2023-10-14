@@ -40,7 +40,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-white-background);
   font-weight: 500;
-  max-width: 1440px;
+
   margin: 0 auto;
 }
 
@@ -193,6 +193,38 @@ body {
   margin-right: 0;
 }
 
+.container-icons {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--color-light);
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.customers-icons {
+  display: flex;
+  border: 1px solid var(--color-subtle-text);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+  fill: var(--color-subtle-text);
+}
+
+.customers-icons:hover,
+.customers-icons:focus {
+  border: 1px solid var(--color-pressed-state);
+  fill: var(--color-pressed-state);
+}
+
 .footer-section {
   background-color: var(--color-dark);
   padding: 100px 0;
@@ -239,8 +271,17 @@ body {
   background-color: var(--color-dark);
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people.jpg");
+
+  background-size: auto auto;
 }
 
 .title-button {
@@ -290,6 +331,37 @@ body {
   min-width: 264px;
 }
 
+.social-links-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.elipse {
+  background-color: var(--color-primary-brand);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  padding: 12px 12px 12px 12px;
+  fill: var(--color-white-background);
+}
+
+.elipse-footer {
+  background-color: var(--color-primary-brand);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  padding: 8px 8px 8px 8px;
+  fill: var(--color-white-background);
+}
+
+.elipse-footer:hover,
+.elipse-footer:focus {
+  background-color: var(--color-success);
+}
+
 .header-secondary {
   color: var(--color-dark);
   text-align: center;
@@ -326,6 +398,7 @@ body {
 
 .section-tertiary {
   background-color: var(--color-light);
+  margin-bottom: 120px;
 }
 
 .team-list {
@@ -344,7 +417,7 @@ body {
 
 .name-list {
   text-align: center;
-  margin-top: 32px;
+
   margin-bottom: 8px;
 }
 
@@ -354,7 +427,7 @@ body {
 
 .position-list {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .title-empty {
@@ -386,7 +459,6 @@ body {
   color: var(--color-primary-brand);
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 16px;
 }
 
 .list-net {
@@ -400,4 +472,29 @@ body {
 
 .item {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.div-footer-main {
+  display: flex;
+  align-items: baseline;
+}
+
+.div-footer-one {
+  margin-right: 120px;
+}
+
+.footer-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white-background);
+  margin-bottom: 16px;
 }
