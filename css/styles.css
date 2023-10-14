@@ -67,6 +67,9 @@ body {
 
 .header-border {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .link {
@@ -193,6 +196,15 @@ body {
   margin-right: 0;
 }
 
+.customers-list {
+  gap: 24px;
+}
+
+.button-customers {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
 .container-icons {
   display: flex;
   border: none;
@@ -206,23 +218,25 @@ body {
   margin-bottom: 8px;
 }
 
-.customers-icons {
-  display: flex;
+.customers-link {
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--color-subtle-text);
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
-  width: 168px;
-  height: 88px;
-  flex-shrink: 0;
-  margin-bottom: 8px;
-  fill: var(--color-subtle-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtle-text);
 }
 
-.customers-icons:hover,
-.customers-icons:focus {
-  border: 1px solid var(--color-pressed-state);
-  fill: var(--color-pressed-state);
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--color-pressed-state);
+  color: var(--color-pressed-state);
+}
+
+.customers-icons {
+  fill: currentColor;
 }
 
 .footer-section {
@@ -273,6 +287,8 @@ body {
   align-items: center;
   margin: 0 auto;
   max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -281,7 +297,7 @@ body {
     ),
     url("../images/people.jpg");
 
-  background-size: auto auto;
+  background-size: cover;
 }
 
 .title-button {
@@ -337,6 +353,12 @@ body {
   justify-content: center;
 }
 
+.social-links-list-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
 .elipse {
   background-color: var(--color-primary-brand);
   width: 40px;
@@ -345,6 +367,25 @@ body {
   display: flex;
   padding: 12px 12px 12px 12px;
   fill: var(--color-white-background);
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-pressed-state);
+}
+
+.elipse-icon {
+  fill: var(--color-light);
 }
 
 .elipse-footer {
@@ -383,6 +424,11 @@ body {
   padding-top: 0;
 }
 
+.what-section-five {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -398,7 +444,6 @@ body {
 
 .section-tertiary {
   background-color: var(--color-light);
-  margin-bottom: 120px;
 }
 
 .team-list {
